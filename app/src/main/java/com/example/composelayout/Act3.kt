@@ -92,6 +92,13 @@ fun UserCardWidget(
                     modifier = Modifier.padding(start = 12.dp)
                 )
             }
+
+            // Logo Kanan
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = stringResource(id = R.string.logo_desc),
+                modifier = Modifier.size(65.dp)
+            )
         }
     }
 
