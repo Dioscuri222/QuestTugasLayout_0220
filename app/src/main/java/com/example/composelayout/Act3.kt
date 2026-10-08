@@ -82,6 +82,15 @@ fun UserCardWidget(
                         modifier = Modifier.padding(start = 12.dp)
                     )
                 }
+
+                // Alamat
+                Text(
+                    text = stringResource(id = alamatRes),
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Medium,
+                    color = colorResource(id = alamatColorRes),
+                    modifier = Modifier.padding(start = 12.dp)
+                )
             }
         }
     }
