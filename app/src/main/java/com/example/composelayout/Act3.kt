@@ -135,5 +135,20 @@ fun Act3Layout(modifier: Modifier = Modifier) {
                 color = colorResource(id = R.color.black)
             )
         }
+        Spacer(modifier = Modifier.height(12.dp))
+    }
+    // --- DAFTAR 4 KARTU ---
+    Column {
+        // Card 1: Fasya Tri Nugroho
+        UserCardWidget(
+            bgColorRes = R.color.card_0_bg,
+            namaRes = R.string.nama_1,
+            alamatRes = R.string.alamat_1,
+            isCursiveFont = true,
+            alamatColorRes = R.color.text_yellow
+        )
+
+
+
     }
 }
