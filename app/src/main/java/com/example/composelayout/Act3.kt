@@ -109,14 +109,14 @@ fun UserCardWidget(
 
 @Composable
 fun Act3Layout(modifier: Modifier = Modifier) {
+    // Semua komponen (Header, Cards, Footer) harus berada di dalam SATU Column utama
     Column(
         modifier = modifier
             .fillMaxSize()
-            .padding(top = 24.dp, bottom = 12.dp),
+            .padding(vertical = 12.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceBetween
-    )
-    {
+    ) {
         // --- HEADER ---
         Column(
             horizontalAlignment = Alignment.CenterHorizontally
@@ -135,42 +135,41 @@ fun Act3Layout(modifier: Modifier = Modifier) {
                 color = colorResource(id = R.color.black)
             )
         }
-        Spacer(modifier = Modifier.height(12.dp))
-    }
-    // --- DAFTAR 4 KARTU ---
-    Column {
-        // Card 1: Fasya Tri Nugroho
-        UserCardWidget(
-            bgColorRes = R.color.card_0_bg,
-            namaRes = R.string.nama_1,
-            alamatRes = R.string.alamat_1,
-            isCursiveFont = true,
-            alamatColorRes = R.color.text_yellow
-        )
-        // Card 2: R Agus
-        UserCardWidget(
-            bgColorRes = R.color.card_1_bg,
-            namaRes = R.string.nama_2,
-            noTelpRes = R.string.telp_2,
-            alamatRes = R.string.alamat_2,
-            alamatColorRes = R.color.text_yellow
-        )
-        // Card 3: H Illyas
-        UserCardWidget(
-            bgColorRes = R.color.card_2_bg,
-            namaRes = R.string.nama_3,
-            noTelpRes = R.string.telp_3,
-            alamatRes = R.string.alamat_3
-        )
-        // Card 4: Adryan
-        UserCardWidget(
-            bgColorRes = R.color.card_3_bg,
-            namaRes = R.string.nama_4,
-            noTelpRes = R.string.telp_4,
-            alamatRes = R.string.alamat_4
-        )
-        Spacer(modifier = Modifier.weight(1f))
 
+        // --- DAFTAR 4 KARTU ---
+        Column {
+            // Card 1: Fasya Tri Nugroho
+            UserCardWidget(
+                bgColorRes = R.color.card_0_bg,
+                namaRes = R.string.nama_1,
+                alamatRes = R.string.alamat_1,
+                isCursiveFont = true,
+                alamatColorRes = R.color.text_yellow
+            )
+            // Card 2: R Agus
+            UserCardWidget(
+                bgColorRes = R.color.card_1_bg,
+                namaRes = R.string.nama_2,
+                noTelpRes = R.string.telp_2,
+                alamatRes = R.string.alamat_2,
+                alamatColorRes = R.color.text_yellow
+            )
+            // Card 3: H Illyas
+            UserCardWidget(
+                bgColorRes = R.color.card_2_bg,
+                namaRes = R.string.nama_3,
+                noTelpRes = R.string.telp_3,
+                alamatRes = R.string.alamat_3
+            )
+            // Card 4: Adryan
+            UserCardWidget(
+                bgColorRes = R.color.card_3_bg,
+                namaRes = R.string.nama_4,
+                noTelpRes = R.string.telp_4,
+                alamatRes = R.string.alamat_4
+            )
+        }
+        Spacer(modifier = Modifier.weight(1f))
         // --- FOOTER ---
         Text(
             text = stringResource(id = R.string.copy),
