@@ -71,6 +71,17 @@ fun UserCardWidget(
                     color = colorResource(id = namaColorRes),
                     modifier = Modifier.padding(start = 12.dp)
                 )
+
+                // No Telp
+                noTelpRes?.let {
+                    Text(
+                        text = stringResource(id = it),
+                        fontSize = 13.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = colorResource(id = telpColorRes),
+                        modifier = Modifier.padding(start = 12.dp)
+                    )
+                }
             }
         }
     }
