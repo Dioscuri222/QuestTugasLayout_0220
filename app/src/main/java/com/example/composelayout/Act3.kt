@@ -2,6 +2,7 @@ package com.example.composelayout
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -51,6 +52,14 @@ fun UserCardWidget(
                 contentDescription = stringResource(id = R.string.logo_desc),
                 modifier = Modifier.size(65.dp)
             )
+
+            // Kolom Teks Tengah
+            Column(
+                modifier = Modifier.weight(1f),
+                horizontalAlignment = Alignment.Start
+            ){
+
+            }
         }
     }
 
