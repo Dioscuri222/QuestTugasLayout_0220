@@ -152,6 +152,7 @@ fun Act3Layout(modifier: Modifier = Modifier) {
                 namaRes = R.string.nama_2,
                 noTelpRes = R.string.telp_2,
                 alamatRes = R.string.alamat_2,
+                isCursiveFont = true,
                 alamatColorRes = R.color.text_yellow
             )
             // Card 3: H Illyas
@@ -159,6 +160,7 @@ fun Act3Layout(modifier: Modifier = Modifier) {
                 bgColorRes = R.color.card_2_bg,
                 namaRes = R.string.nama_3,
                 noTelpRes = R.string.telp_3,
+                isCursiveFont = true,
                 alamatRes = R.string.alamat_3
             )
             // Card 4: Adryan
@@ -166,6 +168,7 @@ fun Act3Layout(modifier: Modifier = Modifier) {
                 bgColorRes = R.color.card_3_bg,
                 namaRes = R.string.nama_4,
                 noTelpRes = R.string.telp_4,
+                isCursiveFont = true,
                 alamatRes = R.string.alamat_4
             )
         }
