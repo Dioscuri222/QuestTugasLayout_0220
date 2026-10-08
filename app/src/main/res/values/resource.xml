@@ -13,4 +13,7 @@
     <string name="nama_3">Hendardo Illyas</string>
     <string name="telp_3">0867676767</string>
     <string name="alamat_3">Graha, Banten</string>
+
+    <string name="copy">Copyright, 2026</string>
+    <string name="logo_desc">Logo UMY</string>
 </resources>
